@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="购物车"
+        android:gravity="center"
+        android:background="#FF4500"
+        android:textColor="#FFFAFA"
+        android:textSize="20sp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/cartlist"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </ListView>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="总价:"
+                android:layout_marginRight="0dp"
+                android:textColor="#EE0000"
+                android:textSize="20sp"
+                android:layout_gravity="center|left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/sum"
+                android:text="0"
+                android:layout_marginRight="20dp"
+                android:textColor="#EE0000"
+                android:layout_gravity="center|left"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="-50dp"
+                android:text="元"
+                android:textSize="18sp"
+                android:textColor="#EE0000"
+                android:layout_gravity="center|left"/>
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清空"
+                android:background="#FF4500"
+                android:textColor="#FFFAFA"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="结算"
+                android:background="#FF4500"
+                android:textColor="#FFFAFA"
+                android:textSize="18sp"
+                android:layout_gravity="center|left"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>

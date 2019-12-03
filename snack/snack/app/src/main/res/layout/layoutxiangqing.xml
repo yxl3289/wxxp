@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/xiangqing"
+        android:text="详情" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:onClick="btnback"
+            android:layout_weight="1"
+            android:background="#FF4500"
+            android:text="返回"
+            android:textSize="18sp"
+            android:textColor="#FFFAFA"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:onClick="btnjia"
+            android:layout_weight="1"
+            android:textColor="#FFFAFA"
+            android:background="#FF4500"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="加入购物车"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</LinearLayout>

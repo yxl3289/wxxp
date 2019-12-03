@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:onClick="btn1">
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/homepage"
+                android:onClick="btn1"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="首页"
+                android:textColor="#FF4500"
+                android:onClick="btn1"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:onClick="btn2">
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/font"
+                android:layout_gravity="center"
+                android:onClick="btn2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="分类"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="5dp"
+                android:textColor="#FF4500"
+                android:onClick="btn2"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:onClick="btn3">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/goodcart"
+                android:layout_gravity="center"
+                android:onClick="btn3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="购物车"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center|bottom"
+                android:textColor="#FF4500"
+                android:onClick="btn3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:onClick="btn8">
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/user"
+            android:layout_gravity="center"
+            android:onClick="btn8"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center|bottom"
+            android:textColor="#FF4500"
+            android:onClick="btn8"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+

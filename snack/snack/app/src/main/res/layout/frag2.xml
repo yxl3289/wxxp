@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:text="分类"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#FF4500"
+        android:textColor="#FFFAFA"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+        <ListView
+            android:layout_width="0dp"
+            android:id="@+id/leftlist"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </ListView>
+        <ListView
+            android:layout_width="0dp"
+            android:id="@+id/rightlist"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
